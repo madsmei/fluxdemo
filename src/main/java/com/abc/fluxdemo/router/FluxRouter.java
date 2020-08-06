@@ -30,7 +30,9 @@ public class FluxRouter {
                 .GET("/student", accept(MediaType.APPLICATION_JSON), fluxHandler::getStudent)
                 .GET("/getRedis", fluxHandler::getRedis)
                 .GET("/getRedis1/{id}", fluxHandler::getRedis1))
-                .filter((serverRequest, handlerFunction) -> filter(serverRequest,handlerFunction)).build();
+                //增加请求过过滤，如果不想加。忽略这一行即可
+                .filter((serverRequest, handlerFunction) -> filter(serverRequest,handlerFunction))
+                .build();
     }
 
     /*****

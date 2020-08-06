@@ -18,6 +18,7 @@ public class User implements Serializable {
     private String uid;
     private String nick;
 
+    //这个一定要有。否则 操作数据库会爆出 ID不存在异常
     @Id
     public Long getId() {
         return id;
