@@ -14,7 +14,6 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 /*****
  *  Flux的路由配置。既然使用webflux，还是使用这种方式比较合理。
  * @Author Mads
- * @Date 2020/7/14
 **/
 @Configuration
 public class FluxRouter {

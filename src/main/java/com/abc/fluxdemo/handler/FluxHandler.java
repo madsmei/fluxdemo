@@ -21,9 +21,9 @@ import java.util.Map;
 public class FluxHandler {
 
     @Autowired
-    private UserReppository userReppository;
+    private UserReppository userReppository;//数据源1
     @Autowired
-    private StudentReppository studentReppository;
+    private StudentReppository studentReppository;//数据源2
 
     @Resource(name="madsRedisRedissonTemplate")
     private ReactiveRedisTemplate reactiveRedisTemplate;
